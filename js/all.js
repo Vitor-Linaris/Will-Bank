@@ -1,0 +1,1 @@
+"use strict";console.log("buttons");var number=32;console.log("modal");
