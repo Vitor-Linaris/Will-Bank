@@ -16,6 +16,12 @@
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: local(Poppins), url(../font/Poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
