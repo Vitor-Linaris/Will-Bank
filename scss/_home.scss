@@ -106,3 +106,136 @@
     }
   }
 }
+
+.s-state {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4.7rem;
+  img {
+    max-width: 60rem;
+  }
+  .content-right {
+    position: relative;
+    width: 100%;
+    height: 60.3rem;
+    background-color: #040404;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .off {
+      position: absolute;
+      top: 48px;
+      left: 90px;
+      &:before {
+        content: "";
+        position: absolute;
+        left: -20px;
+        width: 12px;
+        top: 3px;
+        height: 12px;
+        background-color: #ff0000;
+        border-radius: 50%;
+      }
+      p {
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 120%;
+      }
+    }
+    &__text {
+      p {
+        position: absolute;
+        top: 160px;
+        left: -14px;
+        color: $color-gray-600;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%;
+        letter-spacing: 1.26px;
+        transform: rotate(90deg);
+      }
+    }
+    &__icon {
+      position: absolute;
+      top: 75px;
+      right: 97px;
+      width: 70px;
+      height: 67px;
+    }
+    .element {
+      .top-left {
+        position: absolute;
+        top: 24px;
+        left: 38px;
+        width: 41px;
+        height: 41px;
+      }
+      .top-right {
+        position: absolute;
+        top: 24px;
+        right: 35px;
+        width: 41px;
+        height: 41px;
+      }
+      .bottom-left {
+        position: absolute;
+        bottom: 24px;
+        left: 41px;
+        width: 41px;
+        height: 41px;
+      }
+      .bottom-right {
+        position: absolute;
+        bottom: 24px;
+        right: 32px;
+        width: 41px;
+        height: 41px;
+      }
+    }
+    .txt {
+      width: 100%;
+      max-width: 55rem;
+      h2 {
+        max-width: 43.7rem;
+        color: #fff;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 8rem;
+        strong {
+          color: #ffd900;
+        }
+      }
+      ul {
+        display: flex;
+        li {
+          &:not(:first-child) {
+            margin-left: 11.2rem;
+          }
+          img {
+            width: 48px;
+            height: 48px;
+          }
+          span {
+            display: block;
+            color: #fff;
+            font-family: Poppins;
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 120%;
+            margin-top: 1.6rem;
+            margin-bottom: 0.8rem;
+          }
+          p {
+            color: $color-gray-500;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 150%;
+          }
+        }
+      }
+    }
+  }
+}

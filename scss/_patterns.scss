@@ -35,6 +35,9 @@ h2 {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
       img {
         width: 7rem;
         height: 7rem;
