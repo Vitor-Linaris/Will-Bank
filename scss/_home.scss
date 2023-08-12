@@ -192,7 +192,7 @@
       width: 100%;
       max-width: 55rem;
       h2 {
-        max-width: 43.7rem;
+        max-width: 43rem;
         color: #fff;
         font-weight: 600;
         line-height: 120%;
@@ -277,6 +277,43 @@
       position: relative;
       top: 0;
       right: -1.7rem;
+    }
+  }
+}
+
+.s-app {
+  background-color: #ffd900;
+  position: relative;
+  height: 58.9rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 11.2rem;
+  &__left {
+    position: relative;
+    width: 100%;
+    max-width: 44.4rem;
+    .text {
+      max-width: 34.3rem;
+      margin-bottom: 5.6rem;
+      p {
+        color: $color-gray-700;
+        margin-top: 1.6rem;
+      }
+    }
+    .app-store {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__right {
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 77.3rem;
+      height: 58.9rem;
     }
   }
 }
