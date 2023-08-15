@@ -72,3 +72,34 @@ p {
     }
   }
 }
+
+.card-blog {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  &__item {
+    width: 100%;
+    max-width: 38.4rem;
+    &:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+    .txt {
+      max-width: 31.2rem;
+      span {
+        display: block;
+        color: $color-gray-600;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 120%;
+        margin-top: 2.4rem;
+        margin-bottom: 1.6rem;
+      }
+      p {
+        color: $color-gray-900;
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5.6rem;
+      }
+    }
+  }
+}
