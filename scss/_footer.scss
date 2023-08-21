@@ -1,0 +1,99 @@
+.footer {
+  background-color: $color-gray-100;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 11.9rem;
+    border-bottom: 1px solid #dfe2e6;
+    img {
+      max-width: 12.8rem;
+    }
+    .share {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      span {
+        color: $color-gray-700;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 120%;
+        margin-right: 4rem;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li {
+          &:not(:last-child) {
+            margin-right: 2.4rem;
+          }
+          a {
+            img {
+              max-width: 1.8rem;
+              height: 1.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  &__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav {
+      display: flex;
+      align-items: center;
+      margin-top: 3.2rem;
+      margin-bottom: 4.8rem;
+      .item {
+        &:not(:first-child) {
+          margin-left: 7.2rem;
+        }
+        strong {
+          color: $color-gray-900;
+          font-size: 1.6rem;
+          font-weight: 600;
+          line-height: 120%;
+        }
+        ul {
+          li {
+            margin-top: 2.4rem;
+            a {
+              color: $color-gray-700;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 120%;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      span {
+        display: block;
+        color: $color-gray-900;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: 120%;
+        margin-bottom: 2.4rem;
+      }
+      .links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          &:not(:first-child) {
+            margin-left: 3.2rem;
+          }
+          img {
+            max-width: 17.6rem;
+            height: 5.5rem;
+          }
+        }
+      }
+    }
+  }
+}
