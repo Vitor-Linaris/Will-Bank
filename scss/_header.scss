@@ -32,4 +32,19 @@ header {
       }
     }
   }
+  .btn-mobile {
+    display: none;
+  }
+  @media (max-width: 800px) {
+    nav {
+      display: none;
+    }
+    .cta {
+      display: flex;
+      .btn-mobile {
+        display: block;
+        margin-left: 1.8rem;
+      }
+    }
+  }
 }

@@ -1,4 +1,5 @@
 .s-hero {
+  display: none;
   margin-bottom: 11.2rem;
   .container {
     position: relative;
@@ -75,17 +76,28 @@
       }
     }
   }
-  @media (max-width: 1150px) {
+  @media (max-width: 1440px) {
+    .content-left {
+      margin-top: 8.5rem;
+      margin-right: 2.9rem;
+      .txt {
+        margin-bottom: 5.6rem;
+        h1 {
+          margin-bottom: 2.4rem;
+        }
+      }
+    }
     .content-right {
-      margin-right: -1.8rem;
+      margin-right: -11.2rem;
       .image {
-        width: 120%;
+        height: 49.5rem;
       }
     }
   }
 }
 
 .s-services {
+  display: none;
   margin-bottom: 12.4rem;
   .container {
     display: flex;
@@ -112,7 +124,8 @@
 }
 
 .s-state {
-  display: flex;
+  display: none;
+  /* display: flex; */
   align-items: center;
   justify-content: space-between;
   margin-bottom: 12rem;
@@ -237,9 +250,18 @@
       }
     }
   }
+  @media (max-width: 1440px) {
+    img {
+      max-width: 68.2rem;
+    }
+    .content-right {
+      height: 60.8rem;
+    }
+  }
 }
 
 .s-frauds {
+  display: none;
   margin-bottom: 80px;
   .container {
     display: flex;
@@ -297,14 +319,22 @@
       right: -10.2rem;
     }
   }
+  @media (max-width: 1440px) {
+    &__right {
+      img {
+        right: -7.2rem;
+      }
+    }
+  }
 }
 
 .s-app {
+  display: none;
   background-color: #ffd900;
   position: relative;
   height: 67.6rem;
   width: 100%;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   margin-bottom: 11.2rem;
   &__left {
@@ -362,6 +392,7 @@
 }
 
 .s-blog {
+  display: none;
   &__top {
     display: flex;
     align-items: center;
