@@ -47,4 +47,12 @@ header {
       }
     }
   }
+  @media (max-width: 560px) {
+    height: 8rem;
+    .logo {
+      img {
+        max-width: 8.5rem;
+      }
+    }
+  }
 }
