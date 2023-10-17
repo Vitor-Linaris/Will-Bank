@@ -7,6 +7,9 @@ h2 {
 
 h1 {
   font-size: 48px;
+  @media (max-width: 568px) {
+    font-size: 40px;
+  }
 }
 
 h2 {
@@ -41,9 +44,11 @@ p {
 
 .cards {
   ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    justify-items: center;
+    grid-gap: 4rem;
     li {
       width: 100%;
       max-width: 29.4rem;
@@ -51,9 +56,6 @@ p {
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      &:not(:last-child) {
-        margin-right: 4rem;
-      }
       img {
         width: 7rem;
         height: 7rem;
@@ -72,6 +74,32 @@ p {
         font-size: 1.6rem;
         font-weight: 400;
         line-height: 150%;
+      }
+    }
+  }
+  @media (max-width: 992px) {
+    ul {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 768px) {
+  }
+  @media (max-width: 576px) {
+    ul {
+      grid-template-columns: 1fr;
+      li {
+        img {
+          width: 6rem;
+          height: 6rem;
+          margin-bottom: 0.8rem;
+        }
+        span {
+          font-size: 1.6rem;
+          margin-bottom: 0.8rem;
+        }
+        p {
+          font-size: 1.4rem;
+        }
       }
     }
   }
