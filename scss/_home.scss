@@ -376,7 +376,8 @@
   }
   @media (max-width: 768px) {
     flex-direction: column-reverse;
-    img {
+    margin-bottom: 8rem;
+    .mobile-disabled {
       display: none;
     }
     .content-right {
@@ -387,6 +388,35 @@
       }
       &__icon {
         display: block;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    .content-right {
+      height: 690px;
+      .txt {
+        max-width: 24rem;
+        h2 {
+          font-size: 2.3rem;
+        }
+        ul {
+          flex-direction: column;
+          text-align: center;
+          li {
+            &:not(:first-child) {
+              margin-left: 0rem;
+              margin-top: 3rem;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &__icon {
+        top: 45px;
+        right: 68px;
+        width: 45px;
       }
     }
   }
