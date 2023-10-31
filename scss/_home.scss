@@ -123,6 +123,8 @@
   }
   @media (max-width: 768px) {
     margin-bottom: 9rem;
+  }
+  @media (max-width: 600px) {
     .content-right {
       height: 38rem;
     }
@@ -423,7 +425,6 @@
 }
 
 .s-frauds {
-  display: none;
   margin-bottom: 80px;
   .container {
     display: flex;
@@ -485,6 +486,58 @@
     &__right {
       img {
         right: -7.2rem;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    &__text {
+      max-width: 38.4rem;
+      margin-bottom: 5.2rem;
+    }
+    &__cards {
+      ul {
+        grid-gap: 5.2rem 5.7rem;
+        li {
+          img {
+            width: 4.5rem;
+            height: 2.7rem;
+            margin-bottom: 2rem;
+          }
+        }
+      }
+    }
+    &__right {
+      img {
+        right: 0.8rem;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    &__left {
+      max-width: 72.2rem;
+    }
+    &__right {
+      display: none;
+    }
+  }
+  @media (max-width: 576px) {
+    &__text {
+      text-align: center;
+    }
+    &__cards {
+      ul {
+        grid-template-columns: 1fr;
+        text-align: center;
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 4.5rem;
+            height: 3.7rem;
+          }
+        }
       }
     }
   }
