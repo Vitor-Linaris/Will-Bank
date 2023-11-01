@@ -544,7 +544,9 @@
 }
 
 .s-app {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #ffd900;
   position: relative;
   height: 67.6rem;
@@ -602,6 +604,50 @@
       top: 0;
       right: 0;
       width: 84.5rem;
+    }
+  }
+  @media (max-width: 1440px) {
+    height: 524px;
+    &__left {
+      .text {
+        .decoration-left,
+        .decoration-right {
+          display: none;
+        }
+      }
+    }
+    &__right {
+      img {
+        width: 65.5rem;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__right {
+      img {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    &__left {
+      .text {
+        text-align: center;
+      }
+      .app-store {
+        display: flex;
+        flex-direction: column;
+        li {
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
+        }
+      }
     }
   }
 }
