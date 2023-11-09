@@ -29,6 +29,7 @@ p {
 }
 
 .btn-primary {
+  display: inline-block;
   padding: 1.6rem 3.2rem;
   border: 1px solid $color-gray-800;
   border-radius: 100px;
@@ -106,15 +107,12 @@ p {
 }
 
 .card-blog {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: grid;
+  align-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem 3.2rem;
   &__item {
     width: 100%;
-    max-width: 38.4rem;
-    &:not(:last-child) {
-      margin-right: 3.2rem;
-    }
     .txt {
       max-width: 31.2rem;
       span {
@@ -131,6 +129,19 @@ p {
         font-size: 18px;
         font-weight: 600;
         margin-bottom: 5.6rem;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    &__item {
+      width: 80%;
+      .txt {
+        max-width: 52rem;
       }
     }
   }
