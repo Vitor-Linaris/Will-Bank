@@ -1,3 +1,4 @@
+/* Fade */
 .fade-in {
   opacity: 0;
   transition: opacity 600ms ease-in;
@@ -8,7 +9,7 @@
 
 .fade-up {
   opacity: 0;
-  transform: translateY(-50%);
+  transform: translateY(50%);
   transition: all 600ms ease-out;
   &.appear {
     opacity: 1;

@@ -35,6 +35,11 @@
               height: 1.8rem;
             }
           }
+          &:hover {
+            transform: translateY(-15%);
+            filter: drop-shadow(2px 4px 6px $color-primary-yellow);
+            transition: all 0.4s ease;
+          }
         }
       }
     }
@@ -63,10 +68,26 @@
           li {
             margin-top: 2.4rem;
             a {
+              position: relative;
               color: $color-gray-700;
               font-size: 16px;
               font-weight: 400;
               line-height: 120%;
+              &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -8px;
+                width: 0;
+                height: 3px;
+                background-color: $color-primary-yellow;
+                transition: 0.4s ease;
+              }
+              &:hover {
+                &::after {
+                  width: 100%;
+                }
+              }
             }
           }
         }
